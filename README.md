@@ -1,7 +1,9 @@
 # Starknet JediSwap Transaction Replicator
 This project replicates on a local starknet-devnet blockchain transactions that occurred on starknet-mainnet.
 
-This was implemented to simulate an error case found on JediSwap V2 Mainnet. The idea is to replicate locally the transactions that ocurred on a specific pool to try to achieve on a devnet the same errored state.
+This was implemented to simulate an error case found on JediSwap V2 Mainnet. The idea is to replicate locally the transactions that ocurred on a specific pool to try to achieve the same errored state on a local devnet.
+
+Disclaimer: I, me, or we, can't and won't be held responsable for any business decision, or any other type of decision, made resulting from the behaviour of this project. This project is experimental, use at your own risk.
 
 ## Requirements
 - [Starknet-py](https://starknetpy.readthedocs.io/en/latest/installation.html)
@@ -44,7 +46,7 @@ From this devnet we will be using the first prefunded address as our deployer:
 You may use the [provided account file](account_jedi.json) to interact with the blockchains while using sncast or starkli.
 
 We will then need to add the newly generated account to the devnet:
-
+```bash
 sncast \
     --url http://127.0.0.1:5050 \
     account add \
@@ -53,7 +55,7 @@ sncast \
     --private-key 0x85de4dbfa077d7602041b1dfb751cee2 \
     --class-hash 0x4d07e40e93398ed3c76981e72dd1fd22557a78ce36c0515f679e27f0bb5bc5f \
     --deployed
-
+```
 ## Setup Contracts
 ### 1. Deploy [Factory](https://github.com/jediswaplabs/JediSwap-v2-core/blob/main/src/jediswap_v2_factory.cairo)
 To deploy our Pool Factory we will need to run the following script from [JediSwap V2 Core Contracts](https://github.com/jediswaplabs/JediSwap-v2-core/)
