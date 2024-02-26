@@ -3,7 +3,11 @@ This project replicates on a local starknet-devnet blockchain transactions that 
 
 This was implemented to simulate an error case found on JediSwap V2 Mainnet. The idea is to replicate locally the transactions that ocurred on a specific pool to try to achieve the same errored state on a local devnet.
 
-Disclaimer: I, me, or we, can't and won't be held responsable for any business decision, or any other type of decision, made resulting from the behaviour of this project. This project is experimental, use at your own risk.
+DISCLAIMER:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+THIS PROJECT IS EXPERIMENTAL, USE AT YOUR OWN RISK.
 
 ## Requirements
 - [Starknet-py](https://starknetpy.readthedocs.io/en/latest/installation.html)
